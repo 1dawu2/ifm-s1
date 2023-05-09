@@ -1,0 +1,53 @@
+{
+    "eula": "",
+    "vendor": "IFM",
+    "icon": "https://1dawu2.github.io/ifm-s1/icon.png",
+    "license": "MIT",
+    "id": "ifm.s1",
+    "version": "0.0.1",
+    "name": "IFM S1",
+    "newInstancePrefix": "IFM",
+    "description": "IFM S1",
+    "imports": [],
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "ifm-s1",
+            "url": "https://1dawu2.github.io/ifm-s1/dist/main_bundle.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "imgURL": {
+            "type": "string",
+            "description": "Player image URL",
+            "default": ""
+        }
+    },
+    "dataBindings": {},
+    "methods": {
+        "getURL": {
+            "returnType": "string",
+            "description": "Get the player image URL",
+            "parameters": [],
+            "body": "return this.imgURL;"
+        },
+        "setURL": {
+            "description": "Set the player image URL",
+            "parameters": [
+                {
+                    "name": "value",
+                    "type": "string",
+                    "description": "Selected player image URL"
+                }
+            ],
+            "body": "this.imgURL = value;"
+        }
+    },
+    "events": {
+        "onStart": {
+            "description": "onStart events trigger"
+        }
+    }
+}
