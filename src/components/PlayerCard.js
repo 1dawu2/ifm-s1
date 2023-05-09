@@ -8,11 +8,27 @@ export default class PlayerCard extends HTMLElement {
 
         this._export_settings = {};
         this._export_settings.imgURL = "";
+    }
 
-        this.addEventListener("click", event => {
-            console.log('click');
-        });
+    // SETTINGS
+    get imgURL() {
+        return this._export_settings.imgURL;
+    }
 
+    set imgURL(value) {
+        this._export_settings.imgURL = value;
+    }
+
+    static get observedAttributes() {
+        return [
+            "imgURL",
+        ];
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        if (oldValue != newValue) {
+            this[name] = newValue;
+        }
     }
 
     render() {
