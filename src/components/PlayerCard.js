@@ -1,5 +1,5 @@
-import "@ui5/webcomponents/dist/Card.js" // ui5-card
-
+import "@ui5/webcomponents-base/dist/CustomElementsScope.js"
+setCustomElementsScopingSuffix("ifm");
 export default class PlayerCard extends HTMLElement {
     constructor() {
         super();
@@ -43,27 +43,27 @@ export default class PlayerCard extends HTMLElement {
 
         var uiCardWC = document.createElement('div');
         uiCardWC.innerHTML =
-            `<ui5-card class="small">
-                <ui5-card-header slot="header" title-text="Dona Maria Moore" subtitle-text="Senior Sales Executive">
+            `<ui5-card-ifm class="small">
+                <ui5-card-header-ifm slot="header" title-text="Dona Maria Moore" subtitle-text="Senior Sales Executive">
                     <img src="../../../assets/images/avatars/man_avatar_1.png" slot="avatar" />
-                </ui5-card-header>
+                </ui5-card-header-ifm>
                 <div class="content content-padding">
-                    <ui5-title level="H5" style="padding-bottom: 1rem;">Contact details</ui5-title>
+                    <ui5-title-ifm level="H5" style="padding-bottom: 1rem;">Contact details</ui5-title-ifm>
 
                     <div class="content-group">
-                        <ui5-label>Company Name</ui5-label>
-                        <ui5-title level="H6">Company A</ui5-title>
+                        <ui5-label-ifm>Company Name</ui5-label-ifm>
+                        <ui5-title-ifm level="H6">Company A</ui5-title-ifm>
                     </div>
                     <div class="content-group">
-                        <ui5-label>Address</ui5-label>
-                        <ui5-title level="H6">481 West Street, Anytown 45066, USA</ui5-title>
+                        <ui5-label-ifm>Address</ui5-label-ifm>
+                        <ui5-title-ifm level="H6">481 West Street, Anytown 45066, USA</ui5-title-ifm>
                     </div>
                     <div class="content-group">
-                        <ui5-label>Website</ui5-label>
-                        <ui5-link target="_blank">www.company_a.example.com</ui5-link>
+                        <ui5-label-ifm>Website</ui5-label-ifm>
+                        <ui5-link-ifm target="_blank">www.company_a.example.com</ui5-link-ifm>
                     </div>
                 </div>
-            </ui5-card>`
+            </ui5-card-ifm>`
         shadowRoot.append(uiCardWC);
     }
 }
