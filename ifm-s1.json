@@ -3,16 +3,16 @@
     "vendor": "IFM",
     "icon": "https://1dawu2.github.io/ifm-s1/icon.png",
     "license": "MIT",
-    "id": "ifm.s1",
+    "id": "player.card",
     "version": "0.0.1",
     "name": "IFM S1",
     "newInstancePrefix": "IFM",
-    "description": "IFM S1",
+    "description": "IFM Player Card",
     "imports": [],
     "webcomponents": [
         {
             "kind": "main",
-            "tag": "ifm-s1",
+            "tag": "player-card",
             "url": "https://1dawu2.github.io/ifm-s1/dist/main_bundle.js",
             "integrity": "",
             "ignoreIntegrity": true
