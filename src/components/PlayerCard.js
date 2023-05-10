@@ -1,6 +1,5 @@
-//import "@ui5/webcomponents-base/dist/CustomElementsScope.js"
-//setCustomElementsScopingSuffix("ifm");
-import "@ui5/webcomponents/dist/Button.js";
+import "@ui5/webcomponents-base/dist/CustomElementsScope.js"
+setCustomElementsScopingSuffix("ifm");
 export default class PlayerCard extends HTMLElement {
     constructor() {
         super();
@@ -43,9 +42,8 @@ export default class PlayerCard extends HTMLElement {
         shadowRoot.appendChild(playerCard);
 
         var uiCardWC = document.createElement('div');
-        uiCardWC.innerHTML = `<ui5-button icon="menu" slot="startButton" id="startButton"></ui5-button>`
-        /*         uiCardWC.innerHTML =
-                    `<ui5-card-ifm class="small">
+        uiCardWC.innerHTML =
+            `<ui5-card-ifm class="small">
                         <ui5-card-header-ifm slot="header" title-text="Dona Maria Moore" subtitle-text="Senior Sales Executive">
                             <img src="../../../assets/images/avatars/man_avatar_1.png" slot="avatar" />
                         </ui5-card-header-ifm>
@@ -65,7 +63,7 @@ export default class PlayerCard extends HTMLElement {
                                 <ui5-link-ifm target="_blank">www.company_a.example.com</ui5-link-ifm>
                             </div>
                         </div>
-                    </ui5-card-ifm>` */
+                    </ui5-card-ifm>`
         shadowRoot.append(uiCardWC);
     }
 }
