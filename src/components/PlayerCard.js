@@ -11,11 +11,11 @@ export default class PlayerCard extends HTMLElement {
     }
 
     // SETTINGS
-    get imgURL() {
+    get URL() {
         return this._export_settings.imgURL;
     }
 
-    set imgURL(value) {
+    set URL(value) {
         this._export_settings.imgURL = value;
     }
 
