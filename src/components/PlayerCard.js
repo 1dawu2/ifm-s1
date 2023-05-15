@@ -44,7 +44,8 @@ export default class PlayerCard extends HTMLElement {
         uiCardWC.innerHTML =
             `<ui5-card class="small">
                         <ui5-card-header slot="header" title-text="Dona Maria Moore" subtitle-text="Senior Sales Executive">
-                            <img src="../../../assets/images/avatars/man_avatar_1.png" slot="avatar" />
+                            <img src="https://1dawu2.github.io/ifm-wc/assets/logo.png" slot="avatar" />
+                            <img src="${this._export_settings.imgURL}" slot="avatar" />
                         </ui5-card-header>
                         <div class="content content-padding">
                             <ui5-title level="H5" style="padding-bottom: 1rem;">Contact details</ui5-title>
